@@ -2,7 +2,7 @@
 // Logic for any interactive elements can go here.
 // The Inquiry form is now handled directly by HTML via FormSubmit.co
 
-console.log("SR Photography Site Loaded");
+console.log("Aadhya's visuals Site Loaded");
 
 // Mobile Navigation Toggle
 const hamburger = document.querySelector(".hamburger");
