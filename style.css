@@ -67,6 +67,22 @@ nav {
   color: #f8b400;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger .bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}
+
+
 .nav-contact {
   display: flex;
   flex-direction: column;
