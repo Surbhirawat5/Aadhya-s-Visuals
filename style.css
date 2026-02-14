@@ -515,23 +515,55 @@ footer {
 }
 
 /* ===== Responsive Design ===== */
+/* ===== Responsive Design ===== */
 @media (max-width: 768px) {
 
   /* Navbar */
-  nav {
-    flex-direction: column;
-    gap: 15px;
+  .hamburger {
+    display: flex;
+    z-index: 200;
   }
 
   .nav-links {
+    position: fixed;
+    top: -100%;
+    /* Hidden by default */
+    left: 0;
+    width: 100%;
+    background-color: rgba(32, 178, 170, 0.95);
+    /* LightSeaGreen with opacity */
     flex-direction: column;
-    text-align: center;
-    gap: 10px;
+    align-items: center;
+    padding: 20px 0;
+    transition: 0.4s;
+    z-index: 99;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    top: 70px;
+    /* Adjust based on header height */
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  /* Hamburger Animation */
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
   }
 
   .nav-contact {
-    align-items: center;
-    margin-top: 10px;
+    display: none;
   }
 
   /* Hero Section */
