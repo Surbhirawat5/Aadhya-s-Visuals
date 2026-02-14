@@ -5,6 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SR Photography Studio</title>
+  <!-- <link rel="shortcut icon" href="./logo.png" type="image/x-icon"> -->
+  <link rel="stylesheet" href="style.css" />
   <!-- EmailJS removed in favor of FormSubmit -->
 </head>
 
@@ -247,7 +249,10 @@
   <!-- ===== Inquiry Form Section ===== -->
   <section id="inquiry" class="inquiry">
     <h2 class="size">Send Inquiry</h2><br><br>
-    <form id="inquiryForm">
+    <form id="inquiryForm" action="https://formsubmit.co/shurbhirawat43@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/index.html"> Optional: Redirect back to home -->
       <input type="text" id="name" name="name" placeholder="Your Name" required />
       <input type="email" id="email" name="email" placeholder="Your Email" required />
       <input type="tel" id="phone" name="phone" placeholder="Your Phone" required />
@@ -257,7 +262,7 @@
         <option>Mehndi Ceremony</option>
         <option>Wedding Ceremony</option>
         <option>Reception</option>
-        <option>Prewedding</option>
+        <option>Pre-wedding</option>
         <option>Maternity</option>
         <option>Baby Shoot</option>
         <option>Reel Shoot</option>

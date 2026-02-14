@@ -41,7 +41,10 @@
   <!-- ===== Inquiry Form Section ===== -->
   <section id="inquiry" class="inquiry">
     <h4 class="sizee">Send Enquiry</h4><br><br><br><br>
-    <form id="inquiryForm">
+    <form id="inquiryForm" action="https://formsubmit.co/shurbhirawat43@gmail.com" method="POST">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <!-- <input type="hidden" name="_next" value="http://127.0.0.1:5500/inquiry.html"> Optional: Redirect back to inquiry page -->
       <input type="text" id="name" name="name" placeholder="Your Name" required />
       <input type="email" id="email" name="email" placeholder="Your Email" required />
       <input type="tel" id="phone" name="phone" placeholder="Your Phone" required />
